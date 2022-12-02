@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 50%;
+}
+
+body {
+  margin: 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+.page-wrapper {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+#work {
+  display: grid;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "project-1 project-2"
+    "project-3 project-4"
+  ;
+}
+
+#project-1 {
+  grid-area: project-1;
+
+
+}
