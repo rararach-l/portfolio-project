@@ -1,15 +1,76 @@
-* {
-  box-sizing: border-box;
-}
+
+/*style header here*/
+/*use max-width instead of width to avoid a horizontal scroll bar on smaller browswer sizes*/
 
 header {
-  width: 50%;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  background-color: aquamarine;
+  color:#ffffff;
+  justify-content: space-evenly;
+  width: 100%; 
+  height: 80px;
+  line-height: 30px;
+  margin: 20px;
 }
 
-body {
-  margin: 80px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+nav a {
+  display: 
+  align-items: flex-end;
+  color: black;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* this stying is for all the links on the site, must appear in this order */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.hero-banner {
+  background-color: coral;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.page-wrapper {
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+p, body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5;
+}
+
+h3 {
+  padding-bottom: 10px;
 }
 
 h1,
@@ -18,34 +79,65 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: Gill 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
 }
 
-p {
-  margin: 0;
-}
-
-
-
-.page-wrapper {
-  width: 96%;
-  margin: 2rem auto;
-}
-
-#work {
+.portfolioContainer {
   display: grid;
-  background-color: #2196F3;
-  padding: 10px;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.4fr 1.4fr;
   grid-template-areas:
-    "project-1 project-2"
-    "project-3 project-4"
+    "about-me about about"
+    "work HeroProject HeroProject"
+    "space project-2 project-3"
+    "space project-4 project-5"
   ;
 }
 
-#project-1 {
-  grid-area: project-1;
+.hero-banner, img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
 
+.about-me {
+  grid-area: about-me
+}
 
+.about {
+  grid-area: about;
+}
+
+.HeroProject {
+  grid-area: HeroProject;
+}
+
+.space {
+  grid-area: space;
+}
+
+.project-2 {
+  grid-area: project-2;
+}
+
+.project-3 {
+  grid-area: project-3;
+}
+
+.project-4 {
+  grid-area: project-4;
+}
+
+.project-5 {
+  grid-area: project-5;
+}
+
+.about {
+  grid-area: about;
+}
+
+.footer {
+  display: flex;
+  background-color: aquamarine;
 }

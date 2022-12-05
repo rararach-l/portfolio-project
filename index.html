@@ -4,64 +4,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- add the media query info here -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <title>Rachel Bennett // Web Developer</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1 class="title">Rachel Bennett's Portfolio</h1>
     <nav>
+      <a href="#about-me">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>I make things</h2>
+      <img src="/images/02-hero-bg.jpg"/>
     </div>
   </section>
 
   <main class="page-wrapper">
+    <section class="portfolioContainer">
+    
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-      <div id="project-1">
+    <h2 id="about-me">About Me</h2>
+    <p class="about">Developing creative projects and publications in the UAE, Saudi and the UK. A writer, editor and project manager, Rachel is now learning to code.</p>
+    <h2 id="work">Work</h2>
+
+    <div class="space">
+    </div>
+
+      <div class="HeroProject">
         <h3>project 1</h3>
-        <img src="">
-        <p>lorum ipsum</p>
+        <img src="./images/02-portfolio-1.jpg" width="80%" alt="project-1 stock imge">
       </div>
-£
-      <div id="project-2">
+
+      <div class="project-2">
         <h3>project 2</h3>
-        <img src="">
-        <p>lorum ipsum</p>
+        <img src="./images/02-portfolio-2.jpg" width="80%" alt="">
       </div>
 
-      <div id="project-3"> 
+      <div class="project-3">
         <h3>project 3</h3>
-        <img src="">
-        <p>lorum ipsum</p>
+        <img src="./images/02-portfolio-3.jpg" width="80%" alt="">
       </div>
 
-      <div id="project-4">
+      <div class="project-4">
         <h3>project 4</h3>
-        <img src="">
-        <p>lorum ipsum</p>
+        <img src="./images/02-portfolio-4.jpg" width="80%" alt="">
       </div>
+
+      <div class="project-5">
+        <h3>project 5</h3>
+        <img src="./images/02-portfolio-3.jpg" width="80%" alt="">
+      </div>
+
+    </div>
 
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <footer class="footer" id="contact">
       <h2>Contact Me</h2>
+      <div class="contact">
+        <a href="#" class="ig">Instagram</a>
+        <a href="#" class="ig">GitHub</a>
+    </div>
     </section>
   </main>
 </body>
