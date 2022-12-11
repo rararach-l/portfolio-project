@@ -5,7 +5,7 @@
 }
 
 /* tablets and under */
-@media (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .p, body {
     font-size: 0.5rem;
   }
@@ -37,6 +37,17 @@
     display: none;
   }
 
+  .portfolioContainer {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+      "about-me about"
+      "work HeroProject"
+      "project-2 project-2"
+      "project-3 project-3"
+      "project-4 project-4"
+      "project-5 project-5";
+  }
+
 }
 
 @media (max-width: 570px) {
@@ -61,10 +72,6 @@
     display: none;
   }
 
-  .coverImage {
-    background-size: ;
-  }
-
   .page-wrapper {
     margin: 0 auto; 
     padding-right: 10vh;
@@ -72,11 +79,6 @@
     padding-top: 8vh;
   }
   
-  .portfolioContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
   }
 
 /* styling for whole page – fonts and other*/
