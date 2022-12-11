@@ -4,12 +4,81 @@
   margin: 0;
 }
 
-@media (min-width: 600px) {
+/* tablets and under */
+@media (max-width: 768px) {
   .p, body {
     font-size: 0.5rem;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  .nav > a {
+    font-size: 1rem;
+  }
+
+  .emphasis {
+    font-size: 2rem;
+    font-family: 'Hammersmith One';
+  }
+  
+  .copy {
+    font-family: 'EB Garamond';
+    font-size: 1.25rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+
+  .leadText {
+    display: none;
+  }
+
 }
+
+@media (max-width: 570px) {
+  .p, body {
+    font-size: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .leadText {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .coverImage {
+    background-size: ;
+  }
+
+  .page-wrapper {
+    margin: 0 auto; 
+    padding-right: 10vh;
+    padding-left: 10vh;
+    padding-top: 8vh;
+  }
+  
+  .portfolioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  }
+
 /* styling for whole page – fonts and other*/
 :root {
 --highlight: rgba(138, 44, 226,0.7);
@@ -79,7 +148,7 @@ nav a {
 /* lead styling */
 
 .coverImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Last-Year-at-Marienbad.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Last-Year-at-Marienbad.jpg");
   background-size: cover;
   height: 75vh;
 }
@@ -90,7 +159,7 @@ nav a {
 
 .leadText {
   color: var(--light);
-  padding-top: 30vh;
+  padding-top: 20vh;
   padding-left: 20vw;
   padding-right: 20vw;
   padding-bottom: 3vh;
