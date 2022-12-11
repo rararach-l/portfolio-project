@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+@media (min-width: 600px) {
+  .p, body {
+    font-size: 0.5rem;
+  }
+
+}
 /* styling for whole page – fonts and other*/
 :root {
 --highlight: rgba(138, 44, 226,0.7);
@@ -19,7 +25,7 @@ p, body {
 h3 {
   padding: 1.3rem;
   background-color: var(--highlight);
-  color: white;
+  color: var(--light);
   font-size: 1rem;
   text-align: left;
 }
@@ -49,6 +55,11 @@ img {
   z-index: +3;
 }
 
+.avatar > img {
+  border-radius: 50%;
+  height: 4rem;
+}
+
 .name {
   font-size: 2rem;
 }
@@ -68,13 +79,16 @@ nav a {
 /* lead styling */
 
 .coverImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/02-hero-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Last-Year-at-Marienbad.jpg");
   background-size: cover;
   height: 75vh;
 }
 
+.avatar {
+  size: 5vh;
+}
+
 .leadText {
-  justify-items: flex-end;
   color: var(--light);
   padding-top: 30vh;
   padding-left: 20vw;
@@ -151,8 +165,6 @@ a:active {
 
 .HeroProject {
   grid-area: HeroProject;
-  background-image: url("/images/02-hero-bg.jpg");
-  background-size: cover;
 }
 
 .space {
