@@ -4,11 +4,12 @@
   margin: 0;
 }
 
-@media (min-width: 600px) {
-
-}
-
 /* styling for whole page – fonts and other*/
+:root {
+--highlight: rgba(138, 44, 226,0.7);
+--theme: teal;
+--light: #fff;
+}
 
 p, body {
   font-family: 'EB Garamond';
@@ -17,7 +18,7 @@ p, body {
 
 h3 {
   padding: 1.3rem;
-  background-color: rgba(138, 44, 226,0.7);
+  background-color: var(--highlight);
   color: white;
   font-size: 1rem;
   text-align: left;
@@ -39,8 +40,8 @@ img {
   flex-direction: row;
   position: fixed;
   margin: 0 auto;
-  background-color: teal;
-  color:#ffffff;
+  background-color: var(--theme);
+  color:var(--light);
   width: 100%; 
   height: 4.5rem;
   justify-content: space-around;
@@ -53,7 +54,7 @@ img {
 }
 
 .nav > a {
-  color: white;
+  color: var(--light);
   line-height: 1.5rem;
   font-size: 1.25rem;
   padding: .9rem 1rem;
@@ -74,10 +75,10 @@ nav a {
 
 .leadText {
   justify-items: flex-end;
-  color: white;
+  color: var(--light);
   padding-top: 30vh;
-  padding-left: 40vh;
-  padding-right: 20vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
   padding-bottom: 3vh;
   font-size: 1.3rem;
 }
@@ -103,7 +104,7 @@ a:visited {
 }
 
 a:hover {
-  color: lightseagreen;
+  color: var(--highlight);
 }
 
 a:active {
@@ -179,8 +180,8 @@ a:active {
 .footer {
   display: flex;
   margin: 0 auto;
-  background-color: teal;
-  color:#ffffff;
+  background-color: var(--theme);
+  color:var(--light);
   width: 100%; 
   height: 10vh;
   justify-content: space-around;
@@ -189,5 +190,5 @@ a:active {
 
 .contact > a {
   padding-left: 5rem;
-  color: #ffffff;
+  color: var(--light);
 }
