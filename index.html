@@ -7,81 +7,99 @@
   <!-- add the media query info here -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rachel Bennett // Web Developer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1 class="title">Rachel Bennett's Portfolio</h1>
-    <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="name">
+      <h1>Rachel Bennett</h1>
+    </div>
+    <div class="nav">
+      <a href="#about-me">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <img src="/images/02-hero-bg.jpg"/>
+  <section class="heroBanner">
+    <div class="coverImage">
+      <div class="leadText">
+        <span class="emphasis">text-based&nbsp;</span><span class="copy">writing, editing, communications + marketing projects from publications to press campaigns.</span><span class="copy">text means </span><span
+          class="emphasis">words&nbsp;</span><span class="copy">– on pages, in catalogues, or on the radio – it also means </span><span class="emphasis">code</span>
+        <p>London-based, working internationally with arts and culture organisations to develop and deliver content on
+          and
+          offline
+          </h2>
+      </div>
     </div>
   </section>
 
-  <section class="hero-banner-text">
-    <h2>I write, edit, make, project manage. Now, I code too</h2>
-  </section>
+  <!-- main page body -->
 
   <main class="page-wrapper">
+    <!-- using a wrapper controls the width of all the items -->
     <section class="portfolioContainer">
-    
-    <!-- about me -->
 
-    <h2 id="about-me">About Me</h2>
-    <p class="about">Developing creative projects and publications in the UAE, Saudi and the UK. A writer, editor and project manager, Rachel is now learning to code.</p>
-    <h2 id="work">Work</h2>
+      <!-- about me -->
+      <h2 id="about-me">About Me</h2>
+      <p class="about">For 15 years, I've worked in PR and content development, with a focus in arts and culture. I have led creative projects, contributed research and curatorial assistance to major exhibitions, managed artist studios and developed publications in the UAE, Saudi Arabia and the UK. A writer, editor and project manager, now I am learning to code. With my new front-end development skills, I hope to develop creative online solutions for artists and culture organsiations, presenting writing and work online in innovative ways</p>
 
-    <div class="space">
-    </div>
+      <h2 id="work">Work</h2>
+
+      <!-- is this doing anything? -->
+      <div class="space">
+      </div>
 
       <div class="HeroProject">
-        <h3>Project 1</h3>
-        <img src="./images/02-portfolio-1.jpg" width="80%" alt="project-1 stock imge">
+        <a href="https://rararach-l.github.io/prework-study-guide/">
+          <h3>Prework Study Guide</h3>
+          <img src="./images/02-portfolio-1.jpg">
+        </a>
       </div>
 
-      <div class="project-2">
-        <h3>Project 2</h3>
-        <img src="./images/02-portfolio-2.jpg" width="80%" alt="">
-      </div>
-
+      <a href="https://rararach-l.github.io/horiseon/"><div class="project-2">
+          <h3>Project 2</h3>
+          <img src="./images/02-portfolio-2.jpg">
+      </div></a>
+      
       <div class="project-3">
-        <h3>Project 3</h3>
-        <img src="./images/02-portfolio-3.jpg" width="80%" alt="">
+        <a href="https://rararach-l.github.io/horiseon/">
+          <h3>Project 3</h3>
+          <img src="./images/02-portfolio-3.jpg" width="80%" alt="">
+        </a>
       </div>
 
       <div class="project-4">
+
         <h3>Project 4</h3>
-        <img src="./images/02-portfolio-4.jpg" width="80%" alt="">
+        <a href="https://rararach-l.github.io/horiseon/">
+          <img src="./images/02-portfolio-4.jpg" alt="">
+        </a>
       </div>
 
       <div class="project-5">
-        <h3>Project 5</h3>
-        <img src="./images/02-portfolio-3.jpg" width="80%" alt="">
+        <a href="https://rararach-l.github.io/horiseon/">
+          <h3>Project 5</h3>
+          <img src="./images/02-portfolio-4.jpg" alt="">
+        </a>
       </div>
 
-    </div>
+      </div>
 
-    </section>
-
-    <!-- contact -->
-    <footer class="footer" id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact">
-        <a href="#">Instagram</a>
-        <a href="#">GitHub</a>
-    </div>
     </section>
   </main>
+  <!-- contact -->
+  <footer class="footer" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <a href="https://www.instagram.com/speculative.realness/">Instagram</a>
+      <a href="https://github.com/rararach-l">GitHub</a>
+    </div>
+    </section>
 </body>
 
 </html>
