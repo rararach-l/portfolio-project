@@ -10,7 +10,7 @@ There are no installation requirements for this website.
 The codebase HTML and CSS files are commented to futher explicate the layout approach used, with details on the sections and the css for ease of future editing. Variables have also been employed to allow for ease of colour changes.
 
 ![](/images/Read%20Me%20Screenshot.png)
-This website is best viewed on a desktop, not all functionality is available on smaller screens. This screenshot demonstrates how the website should display on a desktop. 
+This website is best viewed on a desktop but will also work on smaller screens, with some adjustments to styling and design. This screenshot demonstrates how the website should display on a desktop. 
 
 ## Credits
 This website was built from scratch following HTML and CSS classes as part of trilogy education's Front End Dev classes. The hero image is a still from Alain Resnais' 'Last Year at Marienbad', my favourite film. 
